@@ -5,6 +5,7 @@
   <!-- 이름지정 -->
   <persistence-unit name="persistence">
     <class>step01.Member</class>
+    <class>step02.Member</class>
 
     <!-- java.persistence로 시작: JPA 표준 속성, hibernate로 시작: 하이버네이트 전용 속성 -->
     <properties>
@@ -21,6 +22,13 @@
       <property name="hibernate.show_sql" value="true"/>
       <property name="hibernate.format_sql" value="true"/>
       <property name="hibernate.use_sql_comments" value="true"/>
+      <!-- 데이터베이스 스키마 자동 생성
+           create: 기존테이블 삭제 후 다시 생성
+           create-drop: create와 같으나 종료시점에 테이블 DROP
+           update: 변경분만 반영
+           validate 엔티티와 테이블이 정상 매핑되었는지만 확인
+           none: 사용하지 않음                                -->
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
     </properties>
   </persistence-unit>
 </persistence>
