@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2"
+  xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  <!-- 이름지정 -->
+  <persistence-unit name="persistence">
+    <class>step01.Member</class>
+
+    <!-- java.persistence로 시작: JPA 표준 속성, hibernate로 시작: 하이버네이트 전용 속성 -->
+    <properties>
+      <!-- 필수 속성 -->
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.password" value="root"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/study?useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=Asia/Seoul"/>
+      <!-- 데이터베이스 방언: SQL 표준을 지키지 않는 특정 데이터베이스만의 고유의 기능 -->
+      <!-- JPA는 특정 데이터베이스에 종속되지 않는다. 40가지 이상의 데이터베이스 방언 지원-->
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL57Dialect"/>
+
+      <!-- 옵션 -->
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+      <property name="hibernate.use_sql_comments" value="true"/>
+    </properties>
+  </persistence-unit>
+</persistence>
