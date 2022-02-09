@@ -2,7 +2,7 @@
 
 **Tech Skill**
 
-![](http://img.shields.io/badge/Java-red?&logo=Java&link=) ![](http://img.shields.io/badge/Gradle-blue?&logo=Gradle&link=) ![](http://img.shields.io/badge/MySQL-f0f0f0?&logo=MySQL&link=) 
+![](http://img.shields.io/badge/Java-red?&logo=Java&link=) ![](http://img.shields.io/badge/hibernate-gray?&logo=hibernate&link=) ![](http://img.shields.io/badge/Gradle-blue?&logo=Gradle&link=) ![](http://img.shields.io/badge/MySQL-f0f0f0?&logo=MySQL&link=) 
 
 
 **step01**
